@@ -21,6 +21,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </Link>
                 {isAuthenticated && (
                   <>
+                    <Link href="/add" className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">
+                      Add Book
+                    </Link>
                     <Link href="/recommendations" className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">
                       Recommendations
                     </Link>

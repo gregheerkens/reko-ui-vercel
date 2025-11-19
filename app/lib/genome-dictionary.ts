@@ -21,6 +21,12 @@ interface GenomeDictionaryResponse {
 let dictionaryCache: TraitDefinition[] | null = null;
 let dictionaryPromise: Promise<TraitDefinition[]> | null = null;
 
+// Export reset function for testing
+export function resetDictionaryCache() {
+  dictionaryCache = null;
+  dictionaryPromise = null;
+}
+
 export async function loadDictionary(): Promise<TraitDefinition[]> {
   if (dictionaryCache) {
     return dictionaryCache;

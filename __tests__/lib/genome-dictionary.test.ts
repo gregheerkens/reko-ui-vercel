@@ -3,6 +3,7 @@ import {
   getTrait,
   getExpression,
   parseGenome,
+  resetDictionaryCache,
 } from '../../app/lib/genome-dictionary';
 import { api } from '../../app/lib/api';
 
@@ -11,6 +12,7 @@ jest.mock('../../app/lib/api');
 describe('Genome Dictionary Utility', () => {
   beforeEach(() => {
     jest.clearAllMocks();
+    resetDictionaryCache();
   });
 
   describe('loadDictionary', () => {
@@ -154,12 +156,12 @@ describe('Genome Dictionary Utility', () => {
 
   describe('parseGenome - Test 8.2', () => {
     it('should parse 50-character sequence into 50 trait/expression pairs', () => {
-      const sequence = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXY';
+      const sequence = 'A'.repeat(50); // 50 characters
       const result = parseGenome(sequence);
 
       expect(result).toHaveLength(50);
       expect(result[0]).toEqual({ traitIndex: 1, expression: 'A' });
-      expect(result[49]).toEqual({ traitIndex: 50, expression: 'Y' });
+      expect(result[49]).toEqual({ traitIndex: 50, expression: 'A' });
     });
 
     it('should use 1-indexed trait indices', () => {
@@ -181,7 +183,8 @@ describe('Genome Dictionary Utility', () => {
     });
 
     it('should correctly map each character to its position', () => {
-      const sequence = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXY';
+      // Create exactly 50 characters: A-Z (26) + A-X (24) = 50
+      const sequence = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWX';
       const result = parseGenome(sequence);
 
       for (let i = 0; i < 50; i++) {

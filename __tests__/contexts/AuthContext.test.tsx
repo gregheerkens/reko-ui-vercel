@@ -140,6 +140,9 @@ describe('AuthContext', () => {
     it('should logout user and clear token', async () => {
       const LogoutTest = () => {
         const { logout } = useAuth()
+        React.useEffect(() => {
+          logout()
+        }, [logout])
         return <button onClick={logout}>Logout</button>
       }
       
@@ -149,8 +152,9 @@ describe('AuthContext', () => {
         </AuthProvider>
       )
       
-      // This would need user interaction, but demonstrates the structure
-      expect(api.setToken).toHaveBeenCalled()
+      await waitFor(() => {
+        expect(api.setToken).toHaveBeenCalledWith(null)
+      })
     })
   })
 

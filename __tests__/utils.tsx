@@ -25,3 +25,10 @@ export const mockApi = {
   setToken: jest.fn(),
 }
 
+// Dummy test to prevent Jest from failing on this utility file
+describe('Test Utilities', () => {
+  it('should export test utilities', () => {
+    expect(mockApi).toBeDefined();
+  });
+});
+
