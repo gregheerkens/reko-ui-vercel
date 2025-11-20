@@ -27,7 +27,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
       <div className="flex flex-wrap gap-2">
         {question.options.map((opt) => {
           const isSelected = currentValue === opt.value;
-          let style = {};
+          let style: React.CSSProperties = {};
 
           if (isDictionaryLoaded && opt.value !== '?') {
              const expr = getExpression(question.traitIndex, opt.value);
