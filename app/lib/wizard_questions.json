@@ -1,0 +1,358 @@
+[
+  {
+    "stepTitle": "The Basics",
+    "questions": [
+      {
+        "traitIndex": 1,
+        "question": "Category",
+        "variant": "Fiction or Non-Fiction?",
+        "options": [
+          { "label": "Fiction", "value": "F" },
+          { "label": "Mystical / Religious", "value": "M" },
+          { "label": "Non-Fiction", "value": "N" },
+          { "label": "Meh / Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 2,
+        "question": "Book Length",
+        "variant": "How long of a read?",
+        "options": [
+          { "label": "Short (<50k)", "value": "S" },
+          { "label": "Medium (50-100k)", "value": "M" },
+          { "label": "Long (100-200k)", "value": "L" },
+          { "label": "Epic (>200k)", "value": "E" },
+          { "label": "Any Length", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 3,
+        "question": "Intended Age",
+        "variant": "Who is this book for?",
+        "options": [
+          { "label": "Child", "value": "C" },
+          { "label": "Teen / YA", "value": "T" },
+          { "label": "Adult", "value": "A" },
+          { "label": "General Audience", "value": "G" },
+          { "label": "Any Age", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 5,
+        "question": "Primary Genre",
+        "variant": "What vibe are you looking for?",
+        "options": [
+          { "label": "Adventure", "value": "A" },
+          { "label": "Crime", "value": "C" },
+          { "label": "Drama", "value": "D" },
+          { "label": "Fantasy", "value": "F" },
+          { "label": "Sci-Fi", "value": "S" },
+          { "label": "Historical", "value": "I" },
+          { "label": "Horror", "value": "H" },
+          { "label": "Mystery", "value": "M" },
+          { "label": "Nonfiction", "value": "N" },
+          { "label": "Literary", "value": "L" },
+          { "label": "Thriller", "value": "T" },
+          { "label": "Romance", "value": "R" },
+          { "label": "Surprise Me", "value": "?" }
+        ]
+      }
+    ]
+  },
+  {
+    "stepTitle": "Protagonist",
+    "questions": [
+      {
+        "traitIndex": 12,
+        "question": "Protagonist Gender",
+        "variant": "Prefer a male or female lead?",
+        "options": [
+          { "label": "Male", "value": "M" },
+          { "label": "Female", "value": "F" },
+          { "label": "Other/Undefined", "value": "U" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 13,
+        "question": "Protagonist Age",
+        "variant": "How old should the main character be?",
+        "options": [
+          { "label": "Child", "value": "C" },
+          { "label": "Teen", "value": "T" },
+          { "label": "Adult", "value": "A" },
+          { "label": "Elderly", "value": "E" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 14,
+        "question": "Protagonist Type",
+        "variant": "Do you want a hero or an anti-hero?",
+        "options": [
+          { "label": "Traditional Hero", "value": "T" },
+          { "label": "Anti-Hero", "value": "A" },
+          { "label": "Ambiguous", "value": "M" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 15,
+        "question": "Main Characters",
+        "variant": "Solo journey or ensemble cast?",
+        "options": [
+          { "label": "One", "value": "O" },
+          { "label": "Few", "value": "F" },
+          { "label": "Several", "value": "S" },
+          { "label": "Many", "value": "M" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      }
+    ]
+  },
+  {
+    "stepTitle": "Tone & Atmosphere",
+    "questions": [
+      {
+        "traitIndex": 27,
+        "question": "Primary Tone",
+        "variant": "Light and fluffy or dark and gritty?",
+        "options": [
+          { "label": "Light", "value": "B" },
+          { "label": "Dark", "value": "D" },
+          { "label": "Neutral", "value": "N" },
+          { "label": "Satirical", "value": "S" },
+          { "label": "Humorous", "value": "H" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 26,
+        "question": "Narrative Tension",
+        "variant": "High stakes or relaxed pace?",
+        "options": [
+          { "label": "High Tension", "value": "H" },
+          { "label": "Medium", "value": "M" },
+          { "label": "Low / Relaxed", "value": "L" },
+          { "label": "Variable", "value": "V" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 28,
+        "question": "Humor Level",
+        "variant": "Do you want to laugh?",
+        "options": [
+          { "label": "High", "value": "H" },
+          { "label": "Medium", "value": "M" },
+          { "label": "Low", "value": "L" },
+          { "label": "None", "value": "N" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 35,
+        "question": "Violence Level",
+        "variant": "How much violence is okay?",
+        "options": [
+          { "label": "High / Graphic", "value": "H" },
+          { "label": "Moderate", "value": "M" },
+          { "label": "Low", "value": "L" },
+          { "label": "None", "value": "N" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 50,
+        "question": "Emotional Aftereffect",
+        "variant": "How do you want to feel at the end?",
+        "options": [
+          { "label": "Comforted", "value": "C" },
+          { "label": "Thought-Provoked", "value": "T" },
+          { "label": "Unsettled", "value": "U" },
+          { "label": "Exhilarated", "value": "E" },
+          { "label": "Surprise Me", "value": "?" }
+        ]
+      }
+    ]
+  },
+  {
+    "stepTitle": "World & Setting",
+    "questions": [
+      {
+        "traitIndex": 11,
+        "question": "Setting Type",
+        "variant": "Where does it take place?",
+        "options": [
+          { "label": "Urban", "value": "U" },
+          { "label": "Rural", "value": "R" },
+          { "label": "Historical", "value": "H" },
+          { "label": "Futuristic", "value": "F" },
+          { "label": "Fantasy World", "value": "W" },
+          { "label": "Space", "value": "S" },
+          { "label": "Suburban", "value": "B" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 46,
+        "question": "Real-Worldness",
+        "variant": "Is it our world or a new one?",
+        "options": [
+          { "label": "Real World", "value": "R" },
+          { "label": "Alternate Earth", "value": "A" },
+          { "label": "Fantasy World", "value": "F" },
+          { "label": "Surreal/Abstract", "value": "S" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 19,
+        "question": "Technological Period",
+        "variant": "Swords, steam engines, or starships?",
+        "options": [
+          { "label": "Ancient", "value": "A" },
+          { "label": "Medieval", "value": "M" },
+          { "label": "Early Modern", "value": "E" },
+          { "label": "Industrial", "value": "I" },
+          { "label": "Modern", "value": "O" },
+          { "label": "Future", "value": "F" },
+          { "label": "Timeless", "value": "T" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 31,
+        "question": "Worldbuilding Depth",
+        "variant": "Do you want deep lore?",
+        "options": [
+          { "label": "Deep", "value": "D" },
+          { "label": "Moderate", "value": "M" },
+          { "label": "Light", "value": "L" },
+          { "label": "None", "value": "N" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      }
+    ]
+  },
+  {
+    "stepTitle": "Plot & Structure",
+    "questions": [
+      {
+        "traitIndex": 49,
+        "question": "Pace",
+        "variant": "Fast page-turner or slow burn?",
+        "options": [
+          { "label": "Fast", "value": "F" },
+          { "label": "Moderate", "value": "M" },
+          { "label": "Slow", "value": "S" },
+          { "label": "Varied", "value": "V" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 9,
+        "question": "Plot Structure",
+        "variant": "Straight line or complex puzzle?",
+        "options": [
+          { "label": "Linear", "value": "L" },
+          { "label": "Nonlinear", "value": "N" },
+          { "label": "Episodic", "value": "E" },
+          { "label": "Circular", "value": "C" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 7,
+        "question": "Narrative Perspective",
+        "variant": "Who is telling the story?",
+        "options": [
+          { "label": "First Person (I)", "value": "F" },
+          { "label": "Third Limited", "value": "L" },
+          { "label": "Third Omniscient", "value": "O" },
+          { "label": "Multiple POVs", "value": "M" },
+          { "label": "Unreliable", "value": "U" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 48,
+        "question": "Ending Tone",
+        "variant": "Happy ending or tragedy?",
+        "options": [
+          { "label": "Hopeful", "value": "H" },
+          { "label": "Bittersweet", "value": "B" },
+          { "label": "Dark", "value": "D" },
+          { "label": "Ambiguous", "value": "A" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      }
+    ]
+  },
+  {
+    "stepTitle": "Themes & Complexity",
+    "questions": [
+      {
+        "traitIndex": 24,
+        "question": "Text Complexity",
+        "variant": "Easy reading or challenging prose?",
+        "options": [
+          { "label": "Simple", "value": "S" },
+          { "label": "Intermediate", "value": "I" },
+          { "label": "Advanced", "value": "A" },
+          { "label": "Expert", "value": "E" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 29,
+        "question": "Romance Intensity",
+        "variant": "Looking for love?",
+        "options": [
+          { "label": "High", "value": "H" },
+          { "label": "Medium", "value": "M" },
+          { "label": "Low", "value": "L" },
+          { "label": "None", "value": "N" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 42,
+        "question": "Sexual Content",
+        "variant": "Is spice okay?",
+        "options": [
+          { "label": "High", "value": "H" },
+          { "label": "Medium", "value": "M" },
+          { "label": "Low", "value": "L" },
+          { "label": "None", "value": "N" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 34,
+        "question": "Political Themes",
+        "variant": "Interested in politics?",
+        "options": [
+          { "label": "High", "value": "H" },
+          { "label": "Medium", "value": "M" },
+          { "label": "Low", "value": "L" },
+          { "label": "None", "value": "N" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      },
+      {
+        "traitIndex": 39,
+        "question": "Philosophical Density",
+        "variant": "Want to think deep thoughts?",
+        "options": [
+          { "label": "High", "value": "H" },
+          { "label": "Medium", "value": "M" },
+          { "label": "Low", "value": "L" },
+          { "label": "None", "value": "N" },
+          { "label": "Don't Care", "value": "?" }
+        ]
+      }
+    ]
+  }
+]
+

@@ -12,6 +12,7 @@
 
 # testing
 /coverage
+/__tests__
 
 # next.js
 /.next/
@@ -39,3 +40,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Documentation (private)
+documentation/
+IMPLEMENTATION_SUMMARY.md
+TEST_PROGRESS_SUMMARY.md
